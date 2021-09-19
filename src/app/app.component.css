@@ -1,0 +1,30 @@
+h1 {
+    color: rgb(48, 39, 131);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+h2,
+h3 {
+    color: rgb(233, 13, 13);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    margin: 2em;
+}
+
+body,
+input[type="text"],
+button {
+    color: rgb(223, 22, 22);
+    font-family: Cambria, Georgia, serif;
+}
+
+
+/*these are for the all other texts*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

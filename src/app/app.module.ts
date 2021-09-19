@@ -3,14 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+
+
+//declare heroecharacter component. Must be declared only once in ngModule
+import { HeroCharactersComponent } from './hero-characters/hero-characters.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component'; 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroCharactersComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

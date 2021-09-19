@@ -1,0 +1,12 @@
+<!--*ngIf added so the app runs as no hero is selected when the app starts. ngiF removes hero detail if no selected hero is activated
+and when user selects a hero it activates hero detail -->
+<!--Shows information of a selected superhero of tomorrow-->
+<div *ngIf="hero">
+    <h2>Details of {{hero.name | uppercase}} a member of the Superheroes of Tomorrow </h2>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+        <label for="hero-name">Hero name: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    </div>
+
+</div>
