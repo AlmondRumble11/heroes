@@ -24,7 +24,7 @@
 
 .heroes li.selected {
     background-color: rgb(252, 0, 0);
-    color: rgb(29, 4, 255);
+    color: rgb(183, 182, 189);
 }
 
 .heroes li.selected:hover {

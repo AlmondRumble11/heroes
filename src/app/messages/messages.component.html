@@ -1,1 +1,10 @@
-<p>messages works!</p>
+<div *ngIf="messageService.messages.length">
+
+    <h2>Messages</h2>
+    <!--butotn is binded to MessageService.cloear()-->
+    <button class="clear" (click)="messageService.clear()">Clear messages</button>
+
+    <!--*ngIf only shows the messages area if there are messages to show.-->
+    <div *ngFor='let message of messageService.messages'> {{message}} </div>
+
+</div>

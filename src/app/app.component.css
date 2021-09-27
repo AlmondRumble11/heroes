@@ -1,30 +1,35 @@
 h1 {
-    color: rgb(48, 39, 131);
+    color: rgb(59, 150, 89);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
 }
 
 h2,
 h3 {
-    color: rgb(233, 13, 13);
+    color: rgb(215, 253, 1);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
 }
 
-body {
-    margin: 2em;
+h1 {
+    margin-bottom: 0;
 }
 
-body,
-input[type="text"],
-button {
-    color: rgb(223, 22, 22);
-    font-family: Cambria, Georgia, serif;
+nav a {
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #e8e8e800;
+    color: #610b0b;
+    border-radius: 4px;
 }
 
+nav a:hover {
+    color: rgb(68, 71, 66);
+    background-color: #338fb6;
+}
 
-/*these are for the all other texts*/
-
-* {
-    font-family: Arial, Helvetica, sans-serif;
+nav a.active {
+    background-color: rgb(255, 1, 1);
 }

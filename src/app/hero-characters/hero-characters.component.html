@@ -1,12 +1,21 @@
 <h2>My Superheroes of Tomorrow</h2>
 <ul class="heroes">
+    <!--show all heroes-->
+    <li *ngFor="let hero of heroes">
 
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
-
-        <span class="badge">{{hero.id}}</span> {{hero.name}}
+        <a routerLink="/detail/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </a>
+        <button class="delete" title="delete a  hero" (click)="delete(hero)">x</button>
     </li>
 
-
 </ul>
-<!--comes form hero-detail component-->
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<div>
+    <label for="new-hero">Hero name: </label>
+    <input id="new-hero" #heroName />
+
+    <!--add hero an dclear the field -->
+    <button class="add-button" (click)="add(heroName.value); heroName.value=''">
+      Add hero
+    </button>
+</div>
